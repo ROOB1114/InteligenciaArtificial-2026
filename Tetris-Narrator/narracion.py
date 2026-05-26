@@ -66,7 +66,8 @@ class narracion:
         # Cliente para generar comentarios dinámicos en tiempo real
         print("Configurando cliente oficial de Hugging Face SDK para el comentarista...")
         
-        hf_token = os.environ.get("HF_TOKEN", "INSERTAR TOKEN")
+        # poner token de hugging face en variable de entorno HF_TOKEN para seguridad
+
         self.cliente_hf = InferenceClient(token=hf_token)
 
         # ====== INICIALIZAR ESTADO Y MEMORIA ======
